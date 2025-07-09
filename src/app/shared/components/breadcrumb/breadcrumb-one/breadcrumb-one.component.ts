@@ -1,0 +1,23 @@
+import { Component, Input } from '@angular/core';
+import { CommonModule } from '@angular/common';
+
+@Component({
+  standalone: true,
+  imports: [CommonModule],
+  selector: 'app-breadcrumb-one',
+  templateUrl: './breadcrumb-one.component.html',
+  styleUrls: ['./breadcrumb-one.component.scss']
+})
+export class BreadcrumbOneComponent {
+  @Input() bg?: string;
+  @Input() title!: string;
+  @Input() subtitle!: string;
+
+  public bg_img = '/assets/img/page-title/page-title-1.jpg';
+
+  ngOnInit () {
+    if(this.bg){
+      this.bg_img = this.bg;
+    }
+  }
+}

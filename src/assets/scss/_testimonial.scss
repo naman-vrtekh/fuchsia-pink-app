@@ -1,0 +1,83 @@
+/*----------------------------------------*/
+/*  09. TESTIMONIAL CSS
+/*----------------------------------------*/
+@use '_variables' as var;
+@use '_mixins' as mix;
+
+.testimonial{
+    &__area{
+        @include mix.background();
+    }
+    &__nav{
+        margin: auto;
+        text-align: center;
+        width: 360px;
+        @media #{var.$xs}{
+            width: 300px;
+        }
+        &-thumb{
+            & img{
+                border: 4px solid var.$white;
+                @include mix.border-radius(50%);
+                @include mix.transform(scale(.7));
+                display: inline-block;
+                text-align: center;
+            }
+            &.slick-center{
+                & img{
+                    @include mix.transform(scale(1));
+                }
+            }
+            &.swiper-slide-thumb-active{
+                & img{
+                    @include mix.transform(scale(1));
+                }
+            }
+        }
+    }
+    &__wrapper{
+      padding-bottom: 70px;
+        & .swiper-pagination-bullets{
+            position: absolute;
+            bottom: 25px;
+            left: 50%;
+            z-index: 1;
+            width: auto;
+            @include mix.transform(translateX(-50%));
+              & .swiper-pagination-bullet{
+                  font-size: 0;
+                  width: 13px;
+                  height: 13px;
+                  background: #c2c2c2;
+                  @include mix.border-radius(50%);
+                  margin: 0 7px;
+                  border: 2px solid transparent;
+                  opacity: 1;
+                  &.swiper-pagination-bullet-active{
+                      border-color: #bc8247;
+                      background: var.$white;
+                  }
+              }
+        }
+    }
+    &__item{
+        text-align: center;
+        & p{
+            color: var.$black-soft-2;
+            margin-bottom: 0;
+        }
+    }
+}
+
+.avater__info{
+    & h6{
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: 600;
+        margin-bottom: 3px;
+    }
+    & span{
+        color: var.$theme-color;
+        text-transform: uppercase;
+    }
+}
