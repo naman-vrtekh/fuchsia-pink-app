@@ -10,7 +10,7 @@ import { NavManusComponent } from '../header-com/nav-manus/nav-manus.component';
 
 @Component({
   standalone: true,
-  imports: [CommonModule ],
+  imports: [CommonModule, NavManusComponent, MiniCartComponent, ExtraInfoComponent, SearchPopupComponent, OffcanvasComponent],
   selector: 'app-header-one',
   templateUrl: './header-one.component.html',
   styleUrls: ['./header-one.component.scss']
