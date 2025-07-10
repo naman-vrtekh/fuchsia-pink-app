@@ -1,0 +1,33 @@
+/* Ensure header uses Flexbox for alignment */
+.row.align-items-center {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Logo container: align left and set max width */
+  .logo img {
+    height: 60px;          /* Adjust as needed */
+    width: auto;
+    max-width: 180px;      /* Prevents logo from being too wide */
+    display: block;
+  }
+  
+  /* Navigation: push to the right */
+  .header__right {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  
+  /* Responsive: stack or shrink logo/menu on small screens */
+  @media (max-width: 991px) {
+    .logo img {
+      height: 40px;
+      max-width: 120px;
+    }
+    .header__right {
+      justify-content: flex-end;
+    }
+  }
+  
