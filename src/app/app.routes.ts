@@ -15,6 +15,11 @@ export const routes: Routes = [
         path: 'dashboard',
         loadComponent: () => import('../app/shop/pages/shop/shop.component').then(m => m.ShopComponent)
     },
+    {
+    path: 'cart',
+    loadComponent: () => import('../app/shop/pages/cart/cart.component').then(m => m.CartComponent)
+  },
+
 ];
 
 
