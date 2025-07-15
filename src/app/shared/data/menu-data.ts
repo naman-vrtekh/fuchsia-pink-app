@@ -2,19 +2,8 @@ import { IMenuType, IMobileMenu } from "../types/menu-d-t";
 
 const menuData:IMenuType[] = [
   {
-    link: '/',
+    link: '/dashboard',
     title: 'Home',
-    hasDropdown: true,
-    megamenu: false,
-    dropdownItems: [
-      { link: '/home/home-style-1', title: 'Home Style 1' },
-      { link: '/home/home-style-2', title: 'Home Style 2' },
-      { link: '/home/home-style-3', title: 'Home Style 3' },
-      { link: '/home/home-style-4', title: 'Home Style 4' },
-      { link: '/home/home-style-5', title: 'Home Style 5' },
-      { link: '/home/home-style-6', title: 'Home Style 6' },
-      { link: '/home/home-style-7', title: 'Home Style 7' },
-    ]
   },
   {
     link: '/shop',
@@ -48,18 +37,18 @@ const menuData:IMenuType[] = [
           { link: '/shop/shop-details', title: 'External Product' },
         ]
       },
-      {
-        link: '/shop',
-        title: 'Other Shop Pages',
-        dropdownMenu: [
-          { link: '/shop/wishlist', title: 'Wishlist' },
-          { link: '/shop/compare', title: 'Compare' },
-          { link: '/shop/cart', title: 'Shopping Cart' },
-          { link: '/pages/checkout', title: 'Checkout' },
-          { link: '/pages/register', title: 'Register' },
-          { link: '/pages/login', title: 'Login' },
-        ]
-      },
+      // {
+      //   link: '/shop',
+      //   title: 'Other Shop Pages',
+      //   dropdownMenu: [
+      //     { link: '/shop/wishlist', title: 'Wishlist' },
+      //     { link: '/shop/compare', title: 'Compare' },
+      //     { link: '/shop/cart', title: 'Shopping Cart' },
+      //     { link: '/pages/checkout', title: 'Checkout' },
+      //     { link: '/pages/register', title: 'Register' },
+      //     { link: '/pages/login', title: 'Login' },
+      //   ]
+      // },
     ]
   },
   {

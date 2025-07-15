@@ -38,13 +38,17 @@ export class LoginComponent {
     this.formSubmitted = true;
     if (this.loginForm.valid) {
       console.log('login-form-value', this.loginForm.value);
-      this.toastrService.success(`Message sent successfully`);
+      this.toastrService.success(`Logged in successfully`);
 
       // Reset the form
       this.loginForm.reset();
       this.formSubmitted = false; // Reset formSubmitted to false
       this.router.navigate(['dashboard'])
     }
+  }
+
+  register() {
+    this.router.navigate(['register']);
   }
 
   get email() { return this.loginForm.get('email') }
