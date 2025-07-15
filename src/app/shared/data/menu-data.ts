@@ -76,21 +76,21 @@ const menuData:IMenuType[] = [
       { link: '/pages/blog-details', title: 'Blog Details' },
     ]
   },
-  {
-    link: '/shop',
-    title: 'Pages',
-    hasDropdown: true,
-    megamenu: false,
-    dropdownItems: [
-      { link: '/shop/wishlist', title: 'Wishlist' },
-      { link: '/shop/cart', title: 'Shopping Cart' },
-      { link: '/pages/checkout', title: 'Checkout' },
-      { link: '/pages/account', title: 'Account' },
-      { link: '/pages/register', title: 'Register' },
-      { link: '/pages/login', title: 'Login' },
-      { link: '/404', title: 'Error 404' },
-    ]
-  },
+  // {
+  //   link: '/shop',
+  //   title: 'Pages',
+  //   hasDropdown: true,
+  //   megamenu: false,
+  //   dropdownItems: [
+  //     { link: '/shop/wishlist', title: 'Wishlist' },
+  //     { link: '/shop/cart', title: 'Shopping Cart' },
+  //     { link: '/pages/checkout', title: 'Checkout' },
+  //     { link: '/pages/account', title: 'Account' },
+  //     { link: '/pages/register', title: 'Register' },
+  //     { link: '/pages/login', title: 'Login' },
+  //     { link: '/404', title: 'Error 404' },
+  //   ]
+  // },
   {
     link: '/pages/contact',
     title: 'Contact',
