@@ -1,0 +1,126 @@
+// Shop Area Background
+.shop__area {
+    background-color: #f5f1eb;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  
+  // Category Banner
+  .category-banner {
+    background-color: #f5f1eb;
+    padding: 40px 0;
+  
+    h1 {
+      color: #55112a;
+      font-size: 36px;
+      font-weight: 700;
+    }
+  }
+  
+  // Sidebar Styling
+  .shop__sidebar {
+    background-color: #f5f1eb;
+  
+    .sidebar__widget,
+    .reset-button,
+    app-category-filter,
+    app-price-filter,
+    app-size-filtering,
+    app-color-filtering,
+    app-brand-filtering {
+      background-color: #f5f1eb;
+      padding: 15px 0;
+      border-bottom: 1px solid #ddd;
+    }
+  
+    h3 {
+      color: #55112a;
+    }
+  
+    .reset-button .os-btn {
+      background-color: #55112a;
+      color: #ffffff;
+      border: none;
+      transition: background-color 0.3s ease;
+  
+      &:hover {
+        background-color: #770f3a;
+      }
+    }
+  }
+  
+  // Product Area
+  .shop__content-area {
+    background-color: #f5f1eb;
+  
+    .shop__header {
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 20px;
+  
+      .show-text span {
+        color: #55112a;
+        font-weight: 600;
+      }
+  
+      .sort-wrapper select {
+        background-color: #f5f1eb;
+        border: 1px solid #ccc;
+        padding: 8px 12px;
+        border-radius: 4px;
+        color: #55112a;
+      }
+  
+      .nav-pills .nav-link {
+        background-color: #f5f1eb;
+        color: #55112a;
+  
+        &.active {
+          background-color: #55112a;
+          color: #fff;
+        }
+  
+        i {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  
+  // Empty Product Message
+  .cartmini__empty {
+    background-color: #f5f1eb;
+    color: #55112a;
+  
+    h4 {
+      margin-top: 20px;
+      font-weight: 600;
+    }
+  
+    p {
+      color: #333;
+    }
+  
+    .os-btn-3 {
+      background-color: #55112a;
+      color: #fff;
+      padding: 10px 20px;
+      display: inline-block;
+      border-radius: 4px;
+      margin-top: 20px;
+  
+      &:hover {
+        background-color: #770f3a;
+      }
+    }
+  }
+  
+  // Pagination
+  .shop-pagination-wrapper {
+    background-color: #f5f1eb;
+    padding: 20px 0;
+  
+    app-pagination {
+      width: 100%;
+    }
+  }
+  
