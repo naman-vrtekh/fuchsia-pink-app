@@ -1,33 +1,52 @@
-/* Ensure header uses Flexbox for alignment */
+/* Main row: flex layout and vertical alignment */
 .row.align-items-center {
-    display: flex;
-    align-items: center;
-  }
-  
-  /* Logo container: align left and set max width */
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Logo: ensure it's vertically centered */
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo img {
+  height: 60px;
+  width: auto;
+  max-width: 180px;
+  display: block;
+  vertical-align: middle;
+}
+
+/* Header navigation/content: right-aligned, vertically centered */
+.header__right {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 24px; /* Space between navigation items */
+}
+
+/* Ensure individual header items are centered */
+.header__right > * {
+  display: flex;
+  align-items: center;
+}
+
+/* Solid divider line below the header */
+#header-sticky {
+  border-bottom: 2px solid #d3d1cd;
+}
+
+/* Responsive tweaks for smaller screens */
+@media (max-width: 991px) {
   .logo img {
-    height: 60px;          /* Adjust as needed */
-    width: auto;
-    max-width: 180px;      /* Prevents logo from being too wide */
-    display: block;
+    height: 40px;
+    max-width: 120px;
   }
-  
-  /* Navigation: push to the right */
   .header__right {
-    margin-left: auto;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
+    gap: 12px;
   }
-  
-  /* Responsive: stack or shrink logo/menu on small screens */
-  @media (max-width: 991px) {
-    .logo img {
-      height: 40px;
-      max-width: 120px;
-    }
-    .header__right {
-      justify-content: flex-end;
-    }
-  }
-  
+}
