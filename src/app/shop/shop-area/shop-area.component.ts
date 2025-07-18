@@ -113,6 +113,11 @@ export class ShopAreaComponent {
       });
     });
   }
+formatCategoryName(slug: string): string {
+  return decodeURIComponent(slug)
+    .replace(/-/g, ' ')
+    .replace(/\b\w/g, char => char.toUpperCase());
+}
 
   ngOnInit() {
     this.maxPrice = this.productService.maxPrice;

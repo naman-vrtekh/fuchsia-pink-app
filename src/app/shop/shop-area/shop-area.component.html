@@ -1,3 +1,11 @@
+<!-- Category Banner -->
+<section *ngIf="category" class="category-banner text-center">
+  <div class="container">
+    <h1>{{ formatCategoryName(category) }}</h1>
+  </div>
+</section>
+
+
 <section class="shop__area pt-100 pb-100">
   <div class="container">
       <div class="row">
@@ -135,7 +143,7 @@
               </div>
               <!-- reset button end -->
 
-              <!-- feature product start -->
+              <!-- feature product start --> 
               <div class="sidebar__widget">
                   <div class="sidebar__widget-title mb-30">
                       <h3>Featured Products</h3>

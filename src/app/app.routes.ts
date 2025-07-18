@@ -28,7 +28,16 @@ export const routes: Routes = [
   path: 'shop/shop-details/:id',
   loadComponent: () => import('../app/shop/product-details-area/product-details-area.component')
     .then(m => m.ProductDetailsAreaComponent)
-}
+},
+{
+  path: 'shop',
+  loadComponent: () =>
+    import('../app/shop/shop-area/shop-area.component').then(
+      (m) => m.ShopAreaComponent
+    )
+},
+  
+
 
 
 ];

@@ -1,0 +1,81 @@
+.simple-category-list {
+  list-style: none;
+  padding-left: 0;
+
+  li {
+    margin-bottom: 12px;
+    label {
+      font-size: 16px;
+      font-weight: 400;
+      cursor: pointer;
+      color: #333;
+
+      input[type='radio'] {
+        margin-right: 10px;
+        vertical-align: middle;
+      }
+    }
+  }
+}
+.shop-category-list li a {
+  color: #000;
+  text-decoration: none;
+  display: block;
+  padding: 5px 0;
+}
+
+.shop-category-list li a.active {
+  color: #f3008d; /* Fuchsia pink from image */
+  font-weight: bold;
+}
+.shop-page {
+  font-family: 'Poppins', sans-serif;
+
+  .banner {
+    background: linear-gradient(to right, #ffdde1, #ee9ca7);
+    padding: 3rem 1rem;
+    text-align: center;
+
+    .banner-title {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #7c33a0;
+    }
+  }
+
+  .shop-content {
+    display: flex;
+    padding: 2rem;
+
+    .sidebar {
+      width: 250px;
+      padding-right: 2rem;
+
+      .sidebar-title {
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+      }
+
+      .category-list {
+        list-style: none;
+        padding: 0;
+
+        li {
+          margin-bottom: 0.75rem;
+          label {
+            font-size: 1rem;
+            cursor: pointer;
+
+            input {
+              margin-right: 0.5rem;
+            }
+          }
+        }
+      }
+    }
+
+  
+    
+  }
+}

@@ -13,7 +13,25 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./category-filter.component.scss'],
 })
 export class CategoryFilterComponent {
-  public categoryData: ICategoryType[] = category_data;;
+ public categoryList: string[] = [
+  'Accessories',
+  'Blouses',
+  'Bottoms',
+  'Classic Kurtas & Kurta Sets',
+  'Co-ord Sets',
+  'Dupattas',
+  'Kurta Sets',
+  'Lehengas',
+  'Long Dresses & Tunics',
+  'New Arrivals',
+  'Sale',
+  'Sarees',
+  'Signature Fabrics',
+  'Tops',
+  'Uncategorised',
+  'Unstitched Suits sets'
+];
+
   public category: string | null = null;
   public subcategory: string | null = null;
 
