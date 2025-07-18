@@ -1,0 +1,101 @@
+:host {
+    display: block;
+    background-color: #f5f1eb;
+    min-height: 100vh;
+  }
+  
+  // Make sure the header and its content are on one horizontal line and add a bottom border
+  #header-sticky {
+    border-bottom: 2px solid #d3d1cd;
+  }
+  .header__area .row.align-items-center {
+    align-items: center !important;
+  }
+  .header__right {
+    align-items: center !important;
+    display: flex;
+  }
+  
+  // Login section full height, vertically centered
+  .login-area {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 0;
+    background: transparent;
+  }
+  
+  // Login form – centered, clean, no box
+  .basic-login {
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 40px;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  
+  // Styled input fields
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f5f1eb;
+    color: #333;
+  }
+  
+  input[type="text"]::placeholder,
+  input[type="password"]::placeholder {
+    color: #888;
+  }
+  
+  // Button styles
+  button.os-btn,
+  .os-btn-black {
+    background-color: #55112a !important;
+    color: #ffffff !important;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s;
+  }
+  
+  button.os-btn:hover,
+  .os-btn-black:hover {
+    background-color: #770f3a !important;
+  }
+  
+  // Validation error text
+  .text-danger {
+    font-size: 0.875rem;
+    color: #d9534f;
+    margin-top: 4px;
+    display: block;
+  }
+  
+  // Responsive logo and form tweaks (OPTIONAL)
+  // Uncomment if you want the form or header to adapt at mobile widths
+  /*
+  @media (max-width: 600px) {
+    .basic-login {
+      padding: 20px;
+      max-width: 95vw;
+    }
+    .header__right {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  */
+  .login-top-stripe {
+    width: 100%;
+    height: 32px;               /* Adjust height as needed */
+    background-color: #f7aea6;  /* Your specified color */
+  }
+  
