@@ -1,5 +1,5 @@
 export interface IMenuType {
-  link:string,
+  link?:string,
   title:string,
   hasDropdown?:boolean,
   megamenu?:boolean,

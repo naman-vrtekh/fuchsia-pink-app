@@ -6,7 +6,7 @@ const menuData:IMenuType[] = [
     title: 'Home',
   },
   {
-  link: '/shop',
+  // link: '/shop',
   title: 'Shop',
   hasDropdown: true,
   megamenu: true,
