@@ -425,16 +425,11 @@
             }
         }
         &:hover{
-            & .product__thumb-2{
-                visibility: visible;
-                opacity: 1;
-                @include mix.transform(scaleX(1));
-            }
-            & .product__action{
-                visibility: visible;
-                opacity: 1;
-                @include mix.transform(scaleX(1));
-            }
+            // & .product__action{
+            //     visibility: visible;
+            //     opacity: 1;
+            //     @include mix.transform(scaleX(1));
+            // }
             & .product__price{
                 bottom: -10px;
                 visibility: hidden;
