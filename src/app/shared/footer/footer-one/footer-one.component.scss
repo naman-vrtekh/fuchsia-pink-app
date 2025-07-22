@@ -1,0 +1,27 @@
+.footer__area {
+    background: #56112a !important;
+  }
+  
+  /* Footer Logo: identical size and alignment as header */
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    height: 90px;
+    width: none;
+    max-width: none;
+    display: block;
+    vertical-align: middle;
+    transform: translateY(-45px); // Or try -20px for even more lift
+  }
+  
+  
+  @media (max-width: 991px) {
+    .logo img {
+      height: 40px;
+      max-width: 120px;
+    }
+  }
+  
