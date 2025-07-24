@@ -1,19 +1,17 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { RouterOutlet } from '@angular/router';
-import { HeaderOneComponent } from './shared/header/header-one/header-one.component'; // ✅ Correct path
+import { HeaderOneComponent } from './shared/header/header-one/header-one.component';
+import { AnnouncementBarComponent } from './shared/announcement-bar/announcement-bar.component'; 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HeaderOneComponent], // ✅ Import header
+  imports: [RouterOutlet, HeaderOneComponent, AnnouncementBarComponent], 
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title(title: any) {
-    throw new Error('Method not implemented.');
-  }
   constructor(public router: Router) {}
 
   hideHeader(): boolean {

@@ -1,13 +1,16 @@
+import { RouterModule } from '@angular/router';
 import { Component } from '@angular/core';
 import { FormControl, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
 import { SharedModule } from '../shared/shared.module';
 import { CommonModule } from '@angular/common';
 import { ToastrService } from 'ngx-toastr';
 import { Router } from '@angular/router';
+import { HeaderThreeComponent } from '../shared/header/header-three/header-three.component';
+
 
 @Component({
   standalone: true,
-  imports: [CommonModule, FormsModule, ReactiveFormsModule, SharedModule],
+  imports: [RouterModule,CommonModule, FormsModule, ReactiveFormsModule, SharedModule, HeaderThreeComponent],
   selector: 'app-login',
   templateUrl: './login.component.html',
   styleUrl: './login.component.scss'

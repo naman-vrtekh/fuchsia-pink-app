@@ -1,9 +1,5 @@
-<!-- <div class="login-top-stripe"></div> -->
-<app-header-one [transparent]="true" [white_bg]="true"></app-header-one>
+<app-header-three></app-header-three>
 
-<!-- header start -->
-<app-header-one [transparent]="true" [white_bg]="true"></app-header-one>
-<!-- header end -->
 
 <main>
 
@@ -17,41 +13,50 @@
       <div class="row">
         <div class="col-lg-8 offset-lg-2">
           <div class="basic-login">
-            <h3 class="text-center mb-60">Login From Here</h3>
+            <h3 class="text-center mb-60 caslon-224">Login</h3>
+            <p class="login-subtitle">Please enter your e-mail and password:</p>
             <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
-              <div class="mb-20">
-                <label for="email">Email Address <span>**</span></label>
-                <input id="email" type="text" placeholder="Email address..." formControlName="email" />
-                <span
-                  *ngIf="(email?.hasError('required') && email?.touched) || (email?.hasError('email') && email?.dirty) || (formSubmitted && !email?.value)"
-                  class="text-danger">
-                  Email is required and must be a valid email address
-                </span>
-              </div>
 
-              <div class="mb-20">
-                <label for="pass">Password <span>**</span></label>
-                <input id="pass" type="password" placeholder="Enter password..." formControlName="password" />
-                <span
-                  *ngIf=" (password?.hasError('required') && password?.touched) || (password?.errors?.['minlength'] && password?.dirty) || (formSubmitted && !password?.value)"
-                  class="text-danger">
-                  Password is required and must be a 6 character
+              <div class="form-group floating-label-group">
+                <input
+                  id="email"
+                  type="text"
+                  formControlName="email"
+                  class="login-input floating-input"
+                  required
+                  placeholder=" " 
+                  autocomplete="username"
+                />
+                <label for="email" class="floating-label">E-mail</label>
+              </div>
+              
+            
+              <div class="form-group floating-label-group">
+                <input
+                  id="pass"
+                  type="password"
+                  formControlName="password"
+                  class="login-input floating-input"
+                  required
+                  placeholder=" "
+                  autocomplete="current-password"
+                />
+                <label for="pass" class="floating-label">Password</label>
+                <span class="forgot-password avenir-font">
+                  <a href="#">Forgot password?</a>
                 </span>
               </div>
-
-              <div class="login-action mb-20 fix">
-                <span class="log-rem f-left">
-                  <input id="remember" type="checkbox" />
-                  <label for="remember">Remember me!</label>
-                </span>
-                <span class="forgot-login f-right">
-                  <a href="#">Lost your password?</a>
-                </span>
+              
+            
+              <button class="login-btn" type="submit">LOGIN</button>
+              <div class="login-footer-text avenir-font">
+                New customer?
+                <a [routerLink]="'/register'" class="footer-link avenir-font">Create an account</a>
               </div>
-              <button class="os-btn w-100">Login Now</button>
-              <div class="or-divide"><span>or</span></div>
-              <div class="os-btn os-btn-black w-100" (click)="register()">Register Now</div>
+              
             </form>
+            
+            
           </div>
         </div>
       </div>
@@ -61,5 +66,5 @@
 </main>
 
 <!-- footer start -->
-<!-- <app-footer-one></app-footer-one> -->
+<app-footer-one></app-footer-one>
 <!-- footer end -->

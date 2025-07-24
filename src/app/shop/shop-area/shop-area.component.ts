@@ -15,6 +15,7 @@ import { ProductListItemComponent } from '../product-list-item/product-list-item
 import { ProductItemComponent } from '../product-item/product-item.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
+
 @Component({
   standalone: true,
   imports: [CommonModule, FormsModule, ReactiveFormsModule, FeatureProductsComponent, BrandFilteringComponent, CategoryFilterComponent, PriceFilterComponent, SizeFilteringComponent, ColorFilteringComponent, PaginationComponent, ProductListItemComponent, ProductItemComponent],

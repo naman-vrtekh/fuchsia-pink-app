@@ -1,0 +1,19 @@
+:host {
+    display: block;
+    background-color: #f5f1eb;
+    min-height: 100vh;  // Ensures full-page coverage
+    width: 100%;
+  }
+  .login-area,
+  .basic-login {
+    background: transparent;
+  }
+  .floating-label-group input,
+  input[type="text"],
+  input[type="password"] {
+    background-color: #f5f1eb;
+    color: #222;
+    border: 1px solid #231f20;  // Thin, subtle border (adjust if needed)
+    border-radius: 5px;
+  }
+      

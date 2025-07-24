@@ -34,7 +34,7 @@
               <a *ngIf="!isItemInCart(product)" (click)="addToCart(product)" class="cursor-pointer">
                 + Add to Cart
               </a>
-              <a *ngIf="isItemInCart(product)" routerLink="/shop/cart" class="cursor-pointer">
+              <a *ngIf="isItemInCart(product)" routerLink="/cart" class="cursor-pointer">
                 View Cart
               </a>
           </div>
